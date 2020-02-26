@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+
+def my_f_2(list_1=[4,-3,5,-2,-1,2,6,-2]):
+    
+    n=len(list_1)
+    maxSum=0
+    for i in range(n):
+        for j in range(i,n):
+        #print(i,j)
+            t=0
+            for k in range(i,j):                 
+                t=t+list_1[k]
+            if(t>maxSum):
+                maxSum=t
+    return maxSum
+my_f_2()
